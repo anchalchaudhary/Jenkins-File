@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Compile') {
       tools {
-        maven 'M2'
+        maven 'Maven'
       }
       steps {
         sh 'mvn clean package'
